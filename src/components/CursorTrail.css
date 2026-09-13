@@ -1,0 +1,33 @@
+html.cursor-none,
+html.cursor-none * {
+  cursor: none !important;
+}
+
+.cursor-trail-canvas {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  pointer-events: none;
+}
+
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cyan), var(--violet));
+  box-shadow: 0 0 14px rgba(79, 209, 255, 0.7);
+  pointer-events: none;
+  z-index: 301;
+  transition: width 0.2s, height 0.2s;
+  will-change: transform;
+}
+
+@media (max-width: 720px), (pointer: coarse) {
+  .cursor-trail-canvas,
+  .cursor-dot {
+    display: none;
+  }
+}

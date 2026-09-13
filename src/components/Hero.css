@@ -1,0 +1,138 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 32px;
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.hero-center {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-name {
+  font-size: clamp(52px, 9vw, 118px);
+  line-height: 1.02;
+  font-weight: 700;
+}
+
+.hero-name-accent {
+  color: var(--cyan);
+  text-shadow: 0 0 50px rgba(79, 209, 255, 0.55), 0 0 100px rgba(155, 107, 255, 0.3);
+}
+
+.hero-role {
+  margin-top: 22px;
+  font-size: 19px;
+  color: var(--text-dim);
+  max-width: 46ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 38px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 13px 24px;
+  border-radius: 8px;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+  border: 1px solid transparent;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background: linear-gradient(100deg, var(--cyan), var(--violet));
+  color: #05060a;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(79, 209, 255, 0.25);
+}
+
+.btn-ghost {
+  border-color: var(--line-bright);
+  color: var(--text);
+}
+
+.btn-ghost:hover {
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+.hero-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 30px;
+  font-size: 12px;
+  color: var(--text-dim);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 16px;
+  background: rgba(12, 14, 24, 0.5);
+}
+
+.hero-status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5eff9e;
+  box-shadow: 0 0 8px rgba(94, 255, 158, 0.8);
+  animation: dotblink 1.6s ease-in-out infinite;
+}
+
+@keyframes dotblink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 36px;
+  left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--text-faint);
+  z-index: 2;
+}
+
+.scroll-cue-line {
+  width: 1px;
+  height: 34px;
+  background: linear-gradient(180deg, var(--cyan), transparent);
+  animation: scrollpulse 2.2s ease-in-out infinite;
+}
+
+@keyframes scrollpulse {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-status-dot { animation: none; }
+}
+
+@media (max-width: 720px) {
+  .hero { padding: 100px 22px 60px; }
+  .scroll-cue { display: none; }
+}

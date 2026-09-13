@@ -1,0 +1,53 @@
+.contact-terminal {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(12, 14, 24, 0.55);
+  padding: 32px 34px;
+  font-size: 14px;
+}
+
+.contact-line {
+  color: var(--text-dim);
+}
+
+.contact-answer {
+  color: var(--text);
+  margin-top: 6px;
+}
+
+.contact-channels {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.contact-channel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px 16px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.contact-channel:hover {
+  border-color: var(--cyan);
+  transform: translateY(-2px);
+}
+
+.contact-channel-label {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+
+.contact-channel-value {
+  color: var(--cyan);
+  font-size: 13.5px;
+}
+
+@media (max-width: 600px) {
+  .contact-terminal { padding: 24px; }
+  .contact-channels { grid-template-columns: 1fr; }
+}
