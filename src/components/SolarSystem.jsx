@@ -8,9 +8,9 @@ const RINGS = [
     duration: 26,
     reverse: false,
     items: [
-      { src: "/images/Python.png", label: "Python" },
-      { src: "/images/sql1.png", label: "SQL" },
-      { src: "/images/HTML.png", label: "HTML" },
+      { src: "images/Python.png", label: "Python" },
+      { src: "images/sql1.png", label: "SQL" },
+      { src: "images/HTML.png", label: "HTML" },
     ],
   },
   {
@@ -19,10 +19,10 @@ const RINGS = [
     duration: 34,
     reverse: true,
     items: [
-      { src: "/images/CSS.png", label: "CSS" },
-      { src: "/images/PHP.png", label: "PHP" },
-      { src: "/images/PI.png", label: "Power BI" },
-      { src: "/images/t.png", label: "Tableau" },
+      { src: "images/CSS.png", label: "CSS" },
+      { src: "images/PHP.png", label: "PHP" },
+      { src: "images/PI.png", label: "Power BI" },
+      { src: "images/t.png", label: "Tableau" },
     ],
   },
   {
@@ -31,10 +31,10 @@ const RINGS = [
     duration: 42,
     reverse: false,
     items: [
-      { src: "/images/C (1).png", label: "C" },
-      { src: "/images/C++ (CPlusPlus).png", label: "C++" },
-      { src: "/images/mysql.png", label: "MySQL" },
-      { src: "/images/Git.png", label: "Git" },
+      { src: "images/C (1).png", label: "C" },
+      { src: "images/C++ (CPlusPlus).png", label: "C++" },
+      { src: "images/mysql.png", label: "MySQL" },
+      { src: "images/Git.png", label: "Git" },
     ],
   },
   {
@@ -43,9 +43,9 @@ const RINGS = [
     duration: 50,
     reverse: true,
     items: [
-      { src: "/images/AWS.png", label: "AWS" },
-      { src: "/images/Jenkins.png", label: "Jenkins" },
-      { src: "/images/jeera.png", label: "Jira" },
+      { src: "images/AWS.png", label: "AWS" },
+      { src: "images/Jenkins.png", label: "Jenkins" },
+      { src: "images/jeera.png", label: "Jira" },
     ],
   },
   {
@@ -54,9 +54,9 @@ const RINGS = [
     duration: 60,
     reverse: false,
     items: [
-      { src: "/images/vscode.png", label: "VS Code" },
-      { src: "/images/pycharm.png", label: "PyCharm" },
-      { src: "/images/jn.png", label: "Jupyter" },
+      { src: "images/vscode.png", label: "VS Code" },
+      { src: "images/pycharm.png", label: "PyCharm" },
+      { src: "images/jn.png", label: "Jupyter" },
     ],
   },
 ];

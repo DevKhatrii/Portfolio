@@ -4,7 +4,7 @@ const CHANNELS = [
   { label: "Email", value: "mr.devnk@gmail.com", href: "mailto:mr.devnk@gmail.com" },
   { label: "Phone", value: "+1 (954) 910-7450", href: "tel:+19549107450" },
   { label: "LinkedIn", value: "linkedin.com/in/dev-khatri007", href: "https://www.linkedin.com/in/dev-khatri007/" },
-  { label: "Resume", value: "Download PDF", href: "/resume.pdf" },
+  { label: "Resume", value: "Download PDF", href: "resume.pdf" },
 ];
 
 export default function Contact() {

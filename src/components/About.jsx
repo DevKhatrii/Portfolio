@@ -18,7 +18,7 @@ export default function About() {
 
       <div className="about-top">
         <div className="about-photo">
-          <img src="/images/Ny.jpg" alt="Dev Khatri" />
+          <img src="images/Ny.jpg" alt="Dev Khatri" />
         </div>
 
         <div className="about-copy">
